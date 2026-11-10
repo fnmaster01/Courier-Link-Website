@@ -15,3 +15,17 @@
 @media (prefers-reduced-motion: reduce) {
   .hero-copy .eyebrow > span { animation: none; }
 }
+
+/* Animate the hero van without changing its desktop or mobile positioning. */
+@keyframes van-drive {
+  0%, 100% { translate: -7px 0; }
+  25% { translate: 0 -2px; }
+  50% { translate: 7px 0; }
+  75% { translate: 0 -2px; }
+}
+.logo-stage img {
+  animation: van-drive 4s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo-stage img { animation: none; }
+}
