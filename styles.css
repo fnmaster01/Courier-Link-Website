@@ -3,3 +3,15 @@
 .arrow-svg{width:18px;height:18px;vertical-align:middle;display:inline-block}.arrow .arrow-svg{width:43px;height:43px}.art-top .arrow-svg{width:11px;height:11px}
 
 @media(max-width:380px){h1{font-size:50px}.email-link{font-size:20px}header,.wrap{padding-left:22px;padding-right:22px}}
+
+/* A gentle status pulse for the dot beside the opening tagline. */
+@keyframes connection-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .2; }
+}
+.hero-copy .eyebrow > span {
+  animation: connection-blink 2s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-copy .eyebrow > span { animation: none; }
+}
