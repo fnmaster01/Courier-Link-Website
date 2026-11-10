@@ -29,3 +29,5 @@
 @media (prefers-reduced-motion: reduce) {
   .logo-stage img { animation: none; }
 }
+
+.privacy-page{max-width:900px}.privacy-page h1{font-size:clamp(42px,7vw,64px);letter-spacing:-2px;line-height:1.1}.privacy-page .privacy-date{font-size:13px;color:var(--muted);margin-bottom:32px}.privacy-page>p,.privacy-page section p{font-size:16px;color:var(--muted);line-height:1.8}.privacy-page section{margin-top:36px}.privacy-page section h2{font-size:25px;letter-spacing:-.6px;margin-bottom:12px}.privacy-page section a{text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere;color:var(--ink)}
